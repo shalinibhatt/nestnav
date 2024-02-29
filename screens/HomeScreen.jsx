@@ -2,21 +2,30 @@ import {Text, View} from 'react-native';
 
 const HomeScreen = ({navigation}) => {
   return (
-    <View>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 20,
+      }}>
       <Text
         onPress={() => navigation.navigate('Other')}
         style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          textAlign: 'center',
-          backgroundColor: 'lightblue',
-          fontSize: 20,
+          fontSize: 30,
+          color: 'black',
         }}>
-        Other
+        Other Screen
+      </Text>
+      <Text
+        onPress={() => navigation.navigate('SwipeExample')}
+        style={{
+          fontSize: 30,
+          color: 'black',
+        }}>
+        Swipe Example
       </Text>
     </View>
   );
 };
 export default HomeScreen;
-
