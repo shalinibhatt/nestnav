@@ -11,7 +11,7 @@ const StackNavigation = () => {
         headerShown: false,
         animation: 'none',
       }}
-      initialRouteName="TabNavigation">
+      initialRouteName="Other">
       <Stack.Screen name="TabNavigation" component={TabNavigation} />
       <Stack.Screen name="Other" component={Other} />
       <Stack.Screen name="SwipeExample" component={SwipeExample} />

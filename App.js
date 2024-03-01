@@ -11,7 +11,7 @@ const App = () => {
     <NavigationContainer>
       <StatusBar backgroundColor={Color.PRIMARY_COLOR} />
       <Stack.Navigator
-        initialRouteName="SignIn"
+        initialRouteName="StackNavigation"
         screenOptions={{
           headerShown: false,
           animation: 'slide_from_bottom',
