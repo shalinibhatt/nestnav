@@ -3,26 +3,16 @@ import {Text, View} from 'react-native';
 const HomeScreen = ({navigation}) => {
   return (
     <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 20,
-      }}>
+      className={`bg-slate-600 flex-1 justify-center 
+    items-center`}>
       <Text
         onPress={() => navigation.navigate('Other')}
-        style={{
-          fontSize: 30,
-          color: 'black',
-        }}>
+        className={`text-3xl text-white`}>
         Other Screen
       </Text>
       <Text
         onPress={() => navigation.navigate('SwipeExample')}
-        style={{
-          fontSize: 30,
-          color: 'black',
-        }}>
+        className={`text-3xl text-white`}>
         Swipe Example
       </Text>
     </View>
